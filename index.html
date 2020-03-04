@@ -5,14 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor JS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="bg-light">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1>Conversor JS</h1>
+                <h1 class="title">Conversor JS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form id="formConversor">
+                    <div class="form-group">
+                        <input type="number" name="dato" id="dato" class="form-control fieldData" placeholder="Ingresa el numero" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="baseOrigen">Base origen</label>
+                                <input type="number" name="baseOrigen" disabled id="baseOrigen" class="form-control fieldData" placeholder="base origen" value="10" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="baseDestino">Base Destino</label>
+                                <input type="number" name="baseDestino" id="baseDestino" class="form-control fieldData" placeholder="base origen" value="2" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-block btn-success" id="convertir">Convertir</button>
+                </form>
             </div>
         </div>
     </div>
+    <script src="js/Conversor.js"></script>
+    <script src="js/events.js"></script>
 </body>
 </html>
